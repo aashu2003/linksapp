@@ -1,0 +1,19 @@
+{
+  "name": "reconizing",
+  "version": "1.0.0",
+  "description": "",
+  "main": "ashu.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1",
+    "hbs": "^4.1.2",
+    "uuid": "^8.3.2",
+    "wikipedia": "^1.1.1"
+  }
+}

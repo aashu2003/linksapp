@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    {{>navbar}}
+    {{!-- <form action="/makeurl" method="post">
+        <span>
+            <input type="hidden" name="password" value="{{password}}">
+
+            <input type="hidden" name="password" value="{{userid}}"></span>
+
+        <select name="content" id="select" required>
+            <option value="0">Select a content</option>
+        </select>
+
+    </form> --}}
+
+    <h3>Make url  </h3>
+    <form action="/makeurl" method="post"><input type="url" name="urloffile" required placeholder="URL or File link">
+    <input type="text" name="filename" placeholder="file name here" required>
+    <input type="password" name="password" hidden value="{{password}}">
+    <input type="password" name="userid" hidden  value="{{userid}}">
+    <input type="submit" value="Get url">
+    </form>
+   {{data}}
+   <h3>urls</h3>
+<table>
+    <tr><td>
+        Filename
+    </td><td>URL</td><td></td></tr>
+    <tr><td>
+    xyz
+    </td><td>http://go</td><td>GO</td></tr>
+</table>
+
+<script>
+   
+    console.log(({{data}}).json())
+</script>
+</body>
+
+</html>

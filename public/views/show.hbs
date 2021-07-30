@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    {{!-- <meta name="description" content=}}"> --}}
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{filename}}</title>
+</head>
+<body>
+   {{#if urloffile}}
+   <h2>
+       {{filename}} 
+       <form action="/gotofile" method="POST">
+       <input type="text"  name="name" required placeholder="Your NAME">
+       <input type="hidden" name="key" value="{{goto}}">
+       <input type="text" name="school" required placeholder="School NAME">
+       <label for="">Class:</label> 9th :<input type="radio" name="class" value="9th"> 10th:<input type="radio" name="class" value="10th" >
+       <input  type="submit" value="submit">
+       </form>
+   </h2>
+   {{else}}
+   <h1>FIle is NOT availabel.</h1>
+   {{/if}}
+</body>
+</html>
